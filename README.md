@@ -64,7 +64,7 @@ It grabs it once for the session and uses the same token through the execution o
 
 ```
 login = ClearPassAPILogin(server="https://yourserver.network.local:443/api",granttype="client_credentials",
-clientsecret=clientsecret", clientid="clientid", verifySSL=False)
+clientsecret="clientsecret", clientid="clientid", verifySSL=False)
 ```
 Find an API you want to use, by prefixing  ```api```  in your IDE and intellisense will show the available APIs available. Each of the top level API category names are available as a module. Once you have chosen a specifc API to use, for example apiPolicyElements, it will show you the available methods if you suffix a . to the command - ```apiPolicyElements.```
 
