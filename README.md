@@ -39,11 +39,19 @@ e. Acess Token Lifetime: 8 Hours
 If you need information, refer to the ClearPass configuration documentation for the API account -
 https://developer.arubanetworks.com/aruba-cppm/docs/clearpass-configuration  
 
-## Package Installation Instructions 
-In order to prepare your environment for the Python clearpass package:
-1. Make sure Python v3.9 or greater is installed on your operating system
-2. Run the following in a command line terminal to install the pip package - ```pip3 install pyclearpass```
+# Python Requirements  
+Ensure Python v3.9 or greater is installed on your operating system
+# Package Installation  
+#### 1. Installing Package from PyPi
+Run the following in a command line terminal to install the pip package - ```pip3 install pyclearpass``` or ```pip install pyclearpass```. This may vary between Operating Systems. 
 
+#### 2. Installing Package from Github
+1. Click into the Aruba Github Repository where the latest version of pyclearpass is located 
+2. Click Code (in green) and Download to Zip
+3. Extract the zip file into a directory
+4. Go into a command line terminal and change directory (cd) into the folder where you extracted the zipped file and then down one child folder. The folder contents should pyclearpass (FOLDER), LICENCE, pyproject.toml and README.md   
+5. In your command line terminal type ```python3 -m build``` or ```python -m build```. This will create a folder called dist with a file containing a .gz extension. 
+6. Run the following in a command line terminal to install the pip package - ```pip3 install pathtozip.gz``` or ```pip install pathtozip.gz```. This may vary between Operating Systems.
 ## Inital Usage Instructions
 Within your Python favourite IDE enivronment, create an import reference
 ```
@@ -71,9 +79,10 @@ print(apiPolicyElements.getRole(login, limit=100))
 ## Help 
 Once you have written a specific API  ```apiName.FunctionName(```, placing your cursor over the command will show you help for the function and what the required parameters are (example is Visual Studio Code). The first parameter is always login. 
 You may also read the help for the function by calling ```help(apiName.FunctionName)```. Each function contains a help section on how to use it. 
-
 ## Python Package Upgrade Instructions
 Once an update is available on the Python PyPi repository, you may upgrade your release by completing the following in a command line terminal - ```pip3 install pyclearpass --upgrade```
+## Uninstall Package Package
+To remove the Python pyclearpass package, type the following command into a command line terminal - ```pip3 uninstall pyclearpass ``` or ```pip uninstall pyclearpass ```
 
 ## Further Usage Examples
 #### Get Local Server Configuration 
