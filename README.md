@@ -2,7 +2,7 @@
 ## Aruba ClearPass V6.11 SDK
 Aruba ClearPass SDK has been developed in Python v3.9 to utilise the full functionality of the Aruba ClearPass REST API environment. Each available REST API command is available for use in this module.
 
-This package has been uploaded to https://pypi.org/ and is also available to install via "https://github.com/aruba/pyclearpass however installation instructions are not supplied for Github. 
+This package has been uploaded to https://pypi.org/ and is also available to install via "https://github.com/aruba/pyclearpass. Installation instructions are provided below. 
 ## Available API Categories 
 The following describes the available top level functionality of the ClearPass API available within this Python Package. 
 - Operations
@@ -22,7 +22,6 @@ The following describes the available top level functionality of the ClearPass A
 - Session Controls
 - Tools and Utilities
 
-_This is a beta and should not be used in a production environment._
 _This package comes without any warranties and should be used at your own risk._
 
 ## ClearPass Server Readiness
@@ -42,16 +41,21 @@ https://developer.arubanetworks.com/aruba-cppm/docs/clearpass-configuration
 # Python Requirements  
 Ensure Python v3.9 or greater is installed on your operating system
 # Package Installation  
-#### 1. Installing Package from PyPi
+#### Method 1 - Installing Package from PyPi
 Run the following in a command line terminal to install the pip package - ```pip3 install pyclearpass``` or ```pip install pyclearpass```. This may vary between Operating Systems. 
 
-#### 2. Installing Package from Github
+#### Method 2 - Installing Package from Github (not using Git.exe)
 1. Click into the Aruba Github Repository where the latest version of pyclearpass is located 
 2. Click Code (in green) and Download to Zip
 3. Extract the zip file into a directory
 4. Go into a command line terminal and change directory (cd) into the folder where you extracted the zipped file and then down one child folder. The folder contents should pyclearpass (FOLDER), LICENCE, pyproject.toml and README.md   
 5. In your command line terminal type ```python3 -m build``` or ```python -m build```. This will create a folder called dist with a file containing a .gz extension. 
 6. Run the following in a command line terminal to install the pip package - ```pip3 install pathtozip.gz``` or ```pip install pathtozip.gz```. This may vary between Operating Systems.
+
+#### Method 3 - Installing Package from Github (using Git.exe Installed)
+1. Install Git from https://git-scm.com/download/win
+2. Run the following in a command line terminal to install the pip package - ```pip3 install https://github.com/aruba/pyclearpass``` or ```pip install https://github.com/aruba/pyclearpass```. This may vary between Operating Systems.
+
 ## Inital Usage Instructions
 Within your Python favourite IDE enivronment, create an import reference
 ```
