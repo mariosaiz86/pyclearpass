@@ -53,7 +53,7 @@ Run the following in a command line terminal to install the pip package - ```pip
 6. Run the following in a command line terminal to install the pip package - ```pip3 install pathtozip.gz``` or ```pip install pathtozip.gz```. This may vary between Operating Systems.
 
 #### Method 3 - Installing Package from Github (using Git.exe Installed)
-1. Install Git from https://git-scm.com/download/win
+1. Install Git for your Operating System from https://git-scm.com/download
 2. Run the following in a command line terminal to install the pip package - ```pip3 install https://github.com/aruba/pyclearpass``` or ```pip install https://github.com/aruba/pyclearpass```. This may vary between Operating Systems.
 
 ## Inital Usage Instructions
