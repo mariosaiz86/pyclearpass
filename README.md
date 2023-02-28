@@ -52,7 +52,7 @@ Run the following in a command line terminal to install the pip package - ```pip
 5. In your command line terminal type ```python3 -m build``` or ```python -m build```. This will create a folder called dist with a file containing a .gz extension. 
 6. Run the following in a command line terminal to install the pip package - ```pip3 install pathtozip.gz``` or ```pip install pathtozip.gz```. This may vary between Operating Systems.
 
-#### Method 3 - Installing Package from Github (using Git.exe Installed)
+#### Method 3 - Installing Package from Github (using Git.exe)
 1. Install Git for your Operating System from https://git-scm.com/download
 2. Run the following in a command line terminal to install the pip package - ```pip3 install git+https://github.com/aruba/pyclearpass``` or ```pip install git+https://github.com/aruba/pyclearpass```. This may vary between Operating Systems.
 
